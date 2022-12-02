@@ -1,0 +1,250 @@
+* { margin: 0; padding: 0; font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; font-weight: 50;} /*Reset*/
+
+body{
+    background-color: rgb(245, 244, 244); 
+}
+
+ul{ 
+    list-style: none;
+}
+
+.grid-container{
+    text-align: center;
+    display: grid;
+    grid-gap: 0;
+    height: 100%;
+   
+}
+
+
+h1{
+    font-size: 25px;
+    color: black;
+    position: relative;
+    top: -5%;
+    text-align: center;
+
+}
+
+
+.grid-header{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+
+}
+
+.header-logo{
+    height: 70%;
+    width: 5%;
+    margin-top: 0.5%;
+    margin-right: 90%;
+
+}
+
+.grid-menu{
+    background-color:transparent;
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 1.5%;
+    height: 9%;
+    width: 25%;
+
+}
+
+.grid-menu ul{
+    display: inline;
+    position: relative;
+    top: 35%;
+    left: -7%;
+    right: 17%;
+}
+.grid-menu li{
+    float: right;
+    padding-left: 4%;   
+}
+
+.grid-menu a.cadastro:link,:visited, a.login:link,:visited, .grid-menu a.index:link,:visited{
+    border: 2px solid white;
+    color:white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+.grid-menu a.cadastro:hover, a.login:hover, a.index:hover{
+    background-color: rgb(255, 255, 255, 0.7);
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+p, h2{
+    padding: 1%;
+    font-size: 100%;
+    color: black;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 110%;
+}
+
+/*=========CADASTRO E LOGIN ============================*/
+
+.grid-main2{
+    position: absolute;
+    margin-left: 38%;
+    width: 23%;
+    height: 44%;
+    margin-top: 10%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.box legend {
+    margin-top: 2%;
+    color:black;
+    font-weight: bold;
+    font-size: 120%;
+    
+}
+.box select, .box radio{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 5% auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    width: 70%;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    
+}
+
+
+.box input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 5% auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    width: 70%;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}   
+
+.box input[type="password"]:focus{
+    width: 78%;
+    border-color:grey;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: rgb(43, 42, 42, 0.8);
+    display: block;
+    margin: 32px auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+legend{
+    text-align: center;
+    
+}
+.box input[type="submit"]:hover {
+    background-color: rgb(43, 42, 42, 1);
+    color: white;
+}
+
+
+/* ============== FOOTER =======================*/
+
+.fas.fa-user{
+    font-size: 24px;
+    margin-right: 2.5%;
+}
+
+.fas.fa-envelope{
+    font-size: 24px;
+    
+}
+
+.fas.fa-key{
+    font-size: 24px;
+    margin-right: 2%;
+    
+}
+
+.fas.fa-lock{
+    font-size: 24px;
+    margin-right: 3%;
+    
+}
+
+#grid-footer{
+    margin-top: 36.5% ;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    color: black;
+    background: transparent;
+}
+
+#grid-footer p{
+    margin-top: 5%;
+}
+
+.p-footer-left{
+    float: left;
+    margin-left: 2%;
+    margin-top: 0.6%;
+}
+
+.p-footer-right{
+    float: right;
+    margin-right: 2%;
+    margin-top: 0.6%;
+}
+
+.r1{
+    width: 3.2%;
+    height: 65%;
+    margin-top: 4.95%;
+    margin-left: -1%;
+}
+
+.r2{
+    position: absolute;
+    width: 2.4%;
+    height: 53%;
+    margin-top: 5.2%;
+    margin-left: 7%;
+}
+
+::selection {
+    background: black;
+    color: whitesmoke;
+}
+
+::placeholder{
+    color: rgb(26, 26, 26);
+}

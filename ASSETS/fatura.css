@@ -1,0 +1,47 @@
+/*---------------TABELAS-----------------------------*/
+  
+  table{
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 10%;
+    margin-left: 25%;
+  }
+  
+  th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  background-color: rgb(243, 243, 243);
+  text-align: center;
+  }
+  
+  
+  td#editar_excluir{
+    border: none;
+    padding: 0%;
+    width: 9%;
+    border: 1px solid black;
+    padding: 3px;
+    background-color: #a9a9a9;
+  }
+  
+  .button {
+    background-color: #a9a9a9;
+    border: none;
+    color: black;
+    width: 45%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+  
+    cursor: pointer;
+  }
+  .button:hover{
+    background-color: white;
+  }
+  
+  th {
+    background-color: #a9a9a9;
+  }
+  
+  

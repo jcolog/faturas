@@ -1,0 +1,346 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  /* Style tab links */
+  .tablink {
+    background-color: #D9E2E5;
+    color: rgb(33, 20, 20);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 17px 6px;
+    font-size: 11px;
+    width: 18%;
+  }
+  
+  .tablink:hover {
+    background-color: #ADD8E6;
+  }
+ 
+   /* Style tab links */
+   .tablink2 {
+    background-color: #D9E2E5;
+    color: rgb(33, 20, 20);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 17px 6px;
+    font-size: 11px;
+    width: 16%;
+  }
+  
+  .tablink2:hover {
+    background-color: #a9a9a9;
+  }
+ 
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+
+  .tabcontent2 {
+    color: rgb(0, 0, 0);
+    display: none;
+    padding: 100px 20px;
+    height: 80%;
+    margin-top: -10%;
+    width: 96%;
+    margin-left: -1.35%;
+  }
+  
+  #Gerenciar {background-color: #ADD8E6;}
+  #Cadastrarcli{background-color: #ADD8E6;}
+  #CadastrarIm {background-color: #ADD8E6; height: 88%;}
+  #CadastrarFat {background-color: #ADD8E6;}
+  #CadastrarAdm {background-color: #ADD8E6; height: 73%;}
+
+  #Cadastrarcli{
+    height: 66.4%;
+  }
+
+  /* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color:#ADD8E6 ;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: #ADD8E6 ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #D9E2E5;
+    padding: 1px 55px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #e1eaee ;
+    color: #D9E2E5;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e1eaee;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #ADD8E6 ;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px white;
+    color:#ADD8E6;
+    ;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  
+/*=========CADASTRO E LOGIN ============================*/
+
+.box legend {
+  margin-top: 2%;
+  color:black;
+  font-weight: bold;
+  font-size: 200%;
+  
+}
+.box select, .box radio{
+  border: 0;
+  background: none; 
+  display: block;
+  margin: 2% auto;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  width: 77%;
+  outline: none;
+  color: black;
+  border-radius: 5px;
+  transition: 0.25s;
+  background-color: #ddd;
+  
+}
+
+.grid-main-cliente{
+  position: absolute;
+  margin-left: 35%;
+  margin-top: -3%;
+  width: 25%;
+  height: 61%;
+  border: 1px solid black;
+  /*border-radius: 10px; */
+  padding: 10px;
+  background-color: rgb(156, 179, 194);
+}
+
+.grid-main-imoveis{
+  position: absolute;
+  margin-left: 35%;
+  margin-top: -3%;
+  width: 25%;
+  height: 100%;
+  border: 1px solid black;
+  /*border-radius: 10px; */
+  padding: 10px;
+  background-color: rgb(156, 179, 194);
+}
+
+.grid-main-fatura{
+  position: absolute;
+  margin-left: 35%;
+  margin-top: -3%;
+  width: 25%;
+  height: 113%;
+  border: 1px solid black;
+  /*border-radius: 10px; */
+  padding: 10px;
+  background-color: rgb(156, 179, 194);
+}
+
+.grid-main-adm{
+  position: absolute;
+  margin-left: 35%;
+  margin-top: -3%;
+  width: 25%;
+  height: 86%;
+  border: 1px solid black;
+  /*border-radius: 10px; */
+  padding: 10px;
+  background-color: rgb(156, 179, 194);
+}
+
+
+/*=================== INPUTs ==================================*/
+
+
+p{
+  text-align: center;
+  color: black;
+  margin-bottom: 0%;
+}
+
+
+.box input[type="text"],
+.box input[type="number"],
+.box input[type="password"],
+.box input[type="date"],
+.box input[type="email"] {
+    border: 0;
+    background: none; 
+    display: block;
+    margin: 2% auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    width: 70%;
+    outline: none;
+    color: black;
+    border-radius: 5px;
+    transition: 0.25s;
+    background-color: #ddd;
+}   
+
+.box select:focus{
+  width: 83%;
+  border-color:rgb(0, 0, 0);
+}
+
+.box input[type="text"]:focus,
+.box input[type="number"]:focus,
+.box input[type="date"]:focus,
+.box input[type="text"]:focus,
+.box input[type="password"]:focus,
+.box input[type="email"]:focus{
+    width: 78%;
+    border-color:rgb(0, 0, 0);
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px 40px;
+    outline: none;
+    background-color: #ddd;
+    border-radius: 5px;
+    transition: 0.25s;
+    cursor: pointer;
+    margin-top: 2%;
+
+}
+
+legend{
+    text-align: center;
+    
+}
+.box input[type="submit"]:hover {
+    background-color: rgba(11, 11, 11, 0.921);
+    color: white;
+}
+
+
+input[type="file"]{
+    display: none;
+}
+
+/*---------------TABELAS-----------------------------*/
+.tabend{
+  margin-top: -3.5%;
+  width: 98.5%;
+  margin-left: -1.36%;
+  height: 80%;
+}
+
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td{
+border: 1px solid black;
+border-collapse: collapse;
+padding: 5px;
+background-color: rgb(243, 243, 243);
+text-align: center;
+}
+
+
+td#editar_excluir{
+  border: none;
+  padding: 0%;
+  width: 9%;
+  border: 1px solid black;
+  padding: 3px;
+  background-color: #a9a9a9;
+}
+
+.button {
+  background-color: #a9a9a9;
+  border: none;
+  color: black;
+  width: 45%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+.button:hover{
+  background-color: white;
+}
+
+th {
+  background-color: #a9a9a9;
+}
+

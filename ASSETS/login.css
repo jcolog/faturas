@@ -1,0 +1,364 @@
+* { margin: 0; padding: 0; font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; font-weight: 50;} /*Reset*/
+
+body{
+    background-color: rgb(245, 244, 244); 
+}
+
+.grid-container{
+    text-align: center;
+    display: grid;
+    grid-gap: 0;
+    height: 100%;
+   
+}
+
+
+.grid-menu a.cadastro:link,:visited, a.login:link,:visited, .grid-menu a.index:link,:visited{
+    border: 2px solid white;
+    color:white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+.grid-menu a.cadastro:hover, a.login:hover, a.index:hover{
+    background-color: rgba(162, 229, 255, 0.7);
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+/*=========CADASTRO E LOGIN ============================*/
+
+
+.grid-main{
+    position: absolute;
+    margin-left: 25%;
+    width: 17%;
+    height: 70%;
+    margin-top: 6%;
+    border: 1px solid black;
+    /*border-radius: 10px; */
+    padding: 10px;
+    background-color: rgb(156, 179, 194);
+}
+
+
+.grid-left a.conceito:hover{
+    color:black;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+.grid-left a.conceito{
+    color:black;
+    text-decoration: none;
+}
+
+.grid-main2 a.recuperacao{
+    
+    color:black;
+    text-decoration: none;
+}
+
+.grid-main2 a.recuperacao:hover{
+    color:black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.errado{
+    color: red;
+}
+
+.box legend {
+    margin-top: 2%;
+    color:black;
+    font-weight: bold;
+    font-size: 200%;
+    
+}
+.box select, .box radio{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 5% auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    width: 70%;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    
+}
+
+.recuperar_senha{
+    color: rgb(0, 0, 100);
+}
+
+.recuperar_senha:hover{
+    color: rgb(0, 16, 237);
+}
+
+.box input[type="date"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 5% auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    width: 70%;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type="number"],
+.box input[type="password"],
+.box input[type="email"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 2% auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    width: 70%;
+    outline: none;
+    color: black;
+    border-radius: 5px;
+    transition: 0.25s;
+    background-color: #ddd;
+}   
+
+
+.box select:focus,
+.box input[type="number"]:focus,
+.box input[type="date"]:focus,
+.box input[type="text"]:focus,
+.box input[type="password"]:focus,
+.box input[type="email"]:focus{
+    width: 78%;
+    border-color:rgb(0, 0, 0);
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px 40px;
+    outline: none;
+    background-color: #ddd;
+    border-radius: 5px;
+    transition: 0.25s;
+    cursor: pointer;
+    margin-top: 2%;
+
+}
+
+legend{
+    text-align: center;
+    
+}
+.box input[type="submit"]:hover {
+    background-color: rgba(11, 11, 11, 0.921);
+    color: white;
+}
+
+
+input[type="file"]{
+    display: none;
+}
+
+.foto {
+    border: 0;
+    background-color: none;
+    display: block;
+    margin: 5% auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    width: 60%;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.foto:hover{
+    width: 65%;
+    border-color:rgb(163, 234, 255);
+}
+
+.radio{
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
+    position: relative; 
+    padding-left: 30px;
+    cursor: pointer;
+
+}
+
+.radio + .radio {
+    margin-left: 8%;
+}
+
+.radio input[type="radio"]{
+    display: none;
+}
+
+.radio span{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 1.4px;
+}
+
+.radio span:after{
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    left: 47%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: 300ms ease-in-out 0s;
+}
+
+.radio input[type="radio"]:checked ~ span:after{
+    transform: translate(-47%, -46%) scale(1);
+
+}
+
+img{
+    height: 400px;
+    width: 400px;
+    margin-top: -132%;
+    margin-left: 150%;
+}
+
+
+/* -----------------------------------------------*/
+/* ----------------- POP-UP ----------------------*/
+/* -----------------------------------------------*/
+
+/* The popup form - hidden by default */
+.form-popup {
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 22.5%;
+    z-index: 9;
+    box-sizing: border-box;
+    top: 25.5%
+}
+            
+/* Add styles to the form container */
+.form-container {
+    margin-left: -30%;
+    max-width: 90%;
+    padding: 10px;
+    background-color: rgba(163, 234, 255);
+    box-sizing: border-box;
+    border-radius:2px;
+    border: 1px solid black;
+}
+            
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    box-sizing: border-box;
+}
+            
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(161, 208, 255);
+    outline: none;
+    box-sizing: border-box;
+}
+            
+/* Set a style for the submit/login button */
+.form-container .btn {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #494949;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    box-sizing: border-box;
+}
+            
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+    box-sizing: border-box;
+}
+            
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+.x{
+    margin-top: 0.4%;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    margin-left: 92%;
+
+}
+
+.tutorial{
+    color: rgb(99, 98, 98);
+}
+/* -----------------------------------------------*/
+/* --------------- FIM POP-UP --------------------*/
+/* -----------------------------------------------*/
+
+.texto{
+    margin-top: 10%;
+    margin-left: 50%;
+    width: 35%;
+    border: #494949;
+    background-color: #DCDCDC  ;
+    padding: 20px;
+
+}
+
+.texto p{
+    text-align: justify;
+}

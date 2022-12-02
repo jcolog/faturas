@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="../ASSETS/style.css">
+    <script src="../ASSETS/js.js"></script>
+    
+</head>
+
+<body>  
+    <button class="tablink" onclick="openPage('Gerenciar', this, '#ADD8E6')" id="defaultOpen">Gerenciar Usuários  </button>
+    <button class="tablink" onclick="openPage('Cadastrarcli', this, '#ADD8E6')">Cadastrar Clientes</button>
+    <button class="tablink" onclick="openPage('CadastrarIm', this, '#ADD8E6')" >Cadastrar Imóveis</button>
+    <button class="tablink" onclick="openPage('CadastrarFat', this, '#ADD8E6')">Cadastrar Faturas</button>
+    <button class="tablink" onclick="openPage('CadastrarAdm', this, '#ADD8E6')">Cadastrar Administrador</button>
+   
+    <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn"><img src="../IMG/icons8-usuário-50.png" alt="macaco" width="40px" height="40px">
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="login_adm.php">Sair</a>
+          </div>
+        </div>
+      </div>
+      
+    <div id="Gerenciar" class="tabcontent">
+      <script src="../ASSETS/js2.js"></script>
+      <button class="tablink2" onclick="openPage('tab_endereco', this, '#808080')" id="defaultOpen2">Endereço</button>
+      <button class="tablink2" onclick="openPage('tab_bairro', this, '#808080')">Bairro</button>
+      <button class="tablink2" onclick="openPage('tab_cidade', this, '#808080')">Cidade</button>
+      <button class="tablink2" onclick="openPage('tab_imovel', this, '#808080')">Imóvel</button>
+      <button class="tablink2" onclick="openPage('tab_usuario', this, '#808080')">Usuário</button>
+      <button class="tablink2" onclick="openPage('tab_fatura', this, '#808080')">Fatura</button>
+
+<!-------------------------------------------------------------------------------------------------->     
+<!------------------------------ENDEREÇO------------------------------------------------------------>
+      <div id="tab_endereco" class="tabcontent2">
+        <div class = "tabela">
+          <table>
+            <tr>
+              <th>pk_endereco</th>
+              <th>fk_bairro</th>
+              <th>logradouro</th>
+              <th>endereco</th>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td>Bairro teste</td>
+              <td>Rua</td>
+              <td>Endereço teste</td>
+              <td id="editar_excluir">
+              <button href="#" class="button">Editar</button>
+              <button href="#" class="button">Excluir</button>
+              </td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>Bairro teste 02</td>
+              <td>Rua 02</td>
+              <td>Endereço teste 02</td>
+              <td id="editar_excluir">
+              <button href="#" class="button">Editar</button>
+              <button href="#" class="button">Excluir</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+<!------------------------------BAIRRO------------------------------------------------------------------>
+      <div id="tab_bairro" class="tabcontent2">
+        <div class = "tabela">
+          <table>
+            <tr>
+              <th>pk_bairro</th>
+              <th>fk_cidade</th>
+              <th>nome_bairro</th>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td>01</td>
+              <td>Bairro teste</td>
+              <td id="editar_excluir">
+              <button href="#" class="button">Editar</button>
+              <button href="#" class="button">Excluir</button>
+              </td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>02</td>
+              <td>Bairro teste 02</td>
+              <td id="editar_excluir">
+              <button href="#" class="button">Editar</button>
+              <button href="#" class="button">Excluir</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+<!---------------------------------CIDADE----------------------------------------------------------------->
+      <div id="tab_cidade" class="tabcontent2">
+        <div class = "tabela">
+          <table>
+            <tr>
+              <th>pk_cidade</th>
+              <th>nome_cidade</th>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td>Cidade teste</td>
+              <td id="editar_excluir">
+              <button href="#" class="button">Editar</button>
+              <button href="#" class="button">Excluir</button>
+              </td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>Cidade teste 02</td>
+              <td id="editar_excluir">
+              <button href="#" class="button">Editar</button>
+              <button href="#" class="button">Excluir</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+<!---------------------------------IMÓVEL----------------------------------------------------------------->
+      <div id="tab_imovel" class="tabcontent2">
+        <div class = "tabela">
+          <table>
+            <tr>
+              <th>pk_matricula_imovel</th>
+              <th>fk_endereco</th>
+              <th>fk_matricula_cliente</th>
+              <th>numero_casa</th>
+              <th>categoria_imovel</th>
+              <th>complemento</th>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td>01</td>
+              <td>01</td>
+              <td>11</td>
+              <td>Residencial</td>
+              <td>Complemento teste</td>
+              <td id="editar_excluir">
+              <button href="#" class="button">Editar</button>
+              <button href="#" class="button">Excluir</button>
+              </td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>02</td>
+              <td>02</td>
+              <td>22</td>
+              <td>Comercial</td>
+              <td>Complemento teste 02</td>
+              <td id="editar_excluir">
+              <button href="#" class="button">Editar</button>
+              <button href="#" class="button">Excluir</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      
+<!---------------------------------USUÁRIO----------------------------------------------------------------->
+      <div id="tab_usuario" class="tabcontent2">
+        <div class = "tabela">
+          <table>
+            <tr>
+              <th>pk_matricula_cliente</th>
+              <th>nome</th>
+              <th>cpf</th>
+              <th>email</th>
+              <th>telefone</th>
+              <th>tipo_usuario</th>
+              <th>senha</th>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td>Nome teste</td>
+              <td>email@teste.com</td>
+              <td>11111111111</td>
+              <td>11111111111</td>
+              <td>Pessoa física</td>
+              <td>Senhateste</td>
+              <td id="editar_excluir">
+              <button href="#" class="button">Editar</button>
+              <button href="#" class="button">Excluir</button>
+              </td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>Nome teste 02</td>
+              <td>email02@teste.com</td>
+              <td>22222222222</td>
+              <td>22222222222</td>
+              <td>Pessoa jurídica</td>
+              <td>Senhateste02</td>
+              <td id="editar_excluir">
+              <button href="#" class="button">Editar</button>
+              <button href="#" class="button">Excluir</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+<!---------------------------------FATURA----------------------------------------------------------------->
+      <div id="tab_fatura" class="tabcontent2">
+        <div class = "tabela">
+          <table>
+            <tr>
+              <th>pk_fatura</th>
+              <th>fk_matricula_im</th>
+              <th>data_tirada</th>
+              <th>data_vencimento</th>
+              <th>bandeira</th>
+              <th>tarifa</th>
+              <th>metros_cubicos</th>
+              <th>centena_litro</th>
+              <th>dezena_litro</th>
+              <th>litro</th>
+              <th>decimo_litro</th>
+              <th>valor_fatura</th>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td>01</td>
+              <td>01/01/01</td>
+              <td>02/01/01</td>
+              <td>Azul</td>
+              <td>0.10</td>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+              <td>01</td>
+              <td>100.00</td>
+              <td id="editar_excluir">
+              <button href="#" class="button">Editar</button>
+              <button href="#" class="button">Excluir</button>
+              </td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>02</td>
+              <td>02/02/02</td>
+              <td>03/02/02</td>
+              <td>Amarelo</td>
+              <td>0.20</td>
+              <td>20</td>
+              <td>20</td>
+              <td>20</td>
+              <td>20</td>
+              <td>02</td>
+              <td>200.00</td>
+              <td id="editar_excluir">
+              <button href="#" class="button">Editar</button>
+              <button href="#" class="button">Excluir</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+<!-------------------------------------------------------------------------------------------------->     
+<!-------------------------------------------------------------------------------------------------->
+
+    <div id="Cadastrarcli" class="tabcontent">
+
+        <div class="grid-main-cliente"> 
+          <form class="box" action="../PAGES/index.html" method="post"><br>
+                  <legend>Cadastrar clientes</legend><br><br>
+                  <input type="text" name="nome" placeholder="Nome"  required>
+                  <br>
+                  <input type="number" name="CPF" placeholder="CPF (Somente números)"  required>
+                  <br>
+                  <input type="email" name="email" placeholder="E-mail"  required>
+                  <br>
+                  <input type="number" name="telefone" placeholder="Telefone (Somente números)"  required>
+                  <br>
+                  <input type="submit" name="submit" value="Cadastrar">
+          </form>
+        </div>
+
+    </div>
+
+    <div id="CadastrarIm" class="tabcontent">
+       
+      <div class="grid-main-imoveis"> 
+        <form class="box" action="../PAGES/index.html" method="post"><br>
+                <legend>Cadastrar Imóveis</legend><br><br>
+                <input type="number" name="matricula_cli" placeholder="Matrícula do cliente"  required>
+                <br>
+                <input type="text" name="cidade" placeholder="Cidade"  required>
+                <br>
+                <input type="text" name="bairro" placeholder="Bairro"  required>
+                <br>
+                <input type="text" name="logradouro" placeholder="Logradouro"  required>
+                <br>
+                <input type="text" name="endereco" placeholder="Endereço"  required>
+                <br>
+                <input type="number" name="numero" placeholder="Número"  required>
+                <br>
+                <input type="text" name="categoria_im" placeholder="Categoria do imóvel"  required>
+                <br>
+                <input type="text" name="complemento" placeholder="Complemento"  required>
+                <br>
+                <input type="submit" name="submit" value="Cadastrar">
+        </form>
+      </div>
+      
+    </div>
+
+    <div id="CadastrarFat" class="tabcontent">
+      <div class="grid-main-fatura"> 
+        <form class="box" action="../PAGES/index.html" method="post"><br>
+          <legend>Cadastrar Faturas</legend><br><br>
+          
+          <input type="number" name="matricula_im" placeholder="Matrícula do imóvel"  required> 
+          <p>Data da emissão:</p>
+          <input type="date" name="data_emissao" placeholder="Data da emissão"  required> 
+          <p>Vencimento:</p>
+          <input type="date" name="vencimento" placeholder="Vencimento"  required>
+          <p>Bandeira:</p>
+          <select>
+            <option value="azul">Azul</option>
+            <option value="amarela">Amarela</option> 
+            <option value="vermelha">Vermelha</option>
+          </select>
+          <br>
+          <input type="number" name="m3" placeholder="Metros cúbicos"  required>
+          <br>
+          <input type="number" name="centena" placeholder="Centena litro"  required>
+          <br>
+          <input type="number" name="dezena" placeholder="Dezena litro"  required>
+          <br>
+          <input type="number" name=" litro" placeholder="Litro"  required>
+          <br>
+          <input type="number" name=" decimo" placeholder="Décimo litro"  required>
+          <br>
+          <input type="submit" name="submit" value="Cadastrar">
+        </form>
+      </div>
+    </div>
+
+    <div id="CadastrarAdm" class="tabcontent">
+      <div class="grid-main-adm"> 
+        <form class="box" action="../PAGES/index.html" method="post"><br>
+                <legend>Cadastrar Administradores</legend><br><br>
+                <input type="text" name="nome" placeholder="Nome"  required>
+                <br>
+                <input type="number" name="CPF" placeholder="CPF (Somente números)"  required>
+                <br>
+                <input type="email" name="email" placeholder="E-mail"  required>
+                <br>
+                <input type="password" name="senha" placeholder="Senha"  required>
+                <br>
+                <input type="password" name="senha2" placeholder="Confirme a senha"  required>
+                <br>
+                <input type="number" name="telefone" placeholder="Telefone (Somente números)"  required>
+                <br>
+                <input type="submit" name="submit" value="Cadastrar">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
